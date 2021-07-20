@@ -1,4 +1,3 @@
-
 const Pokemon = ( { name, img } ) => {
 
     return(
