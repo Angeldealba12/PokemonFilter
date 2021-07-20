@@ -26,8 +26,8 @@ const Result = ( {pokemon} ) => {
     }, [pokemon])
 
     return (
-        <div>
-            <Pokemon name={name.toLocaleUpperCase()} img={img} />
+        <div className="pokemon-Card" >
+            <Pokemon name={name.charAt(0).toUpperCase() + name.slice(1)} img={img} />
         </div>
     )
 }

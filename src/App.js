@@ -7,10 +7,10 @@ function App() {
  
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-child">
         <SearchBox />
         <Result />
-      </header>
+        </div>    
     </div>
   );
 }

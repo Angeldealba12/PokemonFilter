@@ -20,7 +20,7 @@ const SearchBox = () => {
     }, [])
 
     return (
-        <div className="search">
+        <div className="search-box">
             <div className="searchInputs">
                 <input value={searchTerm} className="input" type="text" placeholder="Search..." onChange={(e) => { 
                     setSearchTerm(e.target.value)
