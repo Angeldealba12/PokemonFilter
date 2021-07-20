@@ -21,6 +21,7 @@ const SearchBox = () => {
 
     return (
         <div className="search-box">
+            <div className="logo"></div>
             <div className="searchInputs">
                 <input value={searchTerm} className="input" type="text" placeholder="Search..." onChange={(e) => { 
                     setSearchTerm(e.target.value)
@@ -45,7 +46,7 @@ const SearchBox = () => {
                     })}
                 </div>
             )}
-            <div>
+            <div className="poke-card">
                 <Result  pokemon={onClick}/>
             </div>
         </div>

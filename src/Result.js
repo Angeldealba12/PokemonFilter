@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Pokemon from './Pokemon';
 
-const Result = ( {pokemon} ) => {
+const Result = ({ pokemon }) => {
 
     const [name, setName] = useState('')
     const [img, setImg] = useState('')
@@ -26,7 +26,7 @@ const Result = ( {pokemon} ) => {
     }, [pokemon])
 
     return (
-        <div className="pokemon-Card" >
+        <div >
             <Pokemon name={name.charAt(0).toUpperCase() + name.slice(1)} img={img} />
         </div>
     )

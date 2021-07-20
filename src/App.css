@@ -21,21 +21,31 @@
 }
 
 .search-box {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 80vw;
-  min-height: 80vh;
+  width: 90vw;
+  height: 90vh;
+}
+
+.search-box .logo{
+  width: 100%;
+  height: 10rem;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
 }
 
 .input {
   margin-top: 20px;
-  width: 12rem;
-  height: 2rem;
+  width: 14rem;
+  height: 2.5rem;
   font-size: 1rem;
   padding-left: 10px;
+  border-radius: 2rem;
+  border: 0;
 }
 
 p {
@@ -44,13 +54,13 @@ p {
 }
 
 .dataResult {
-  margin-top: 5px;
   width: 12rem;
   height: 5rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;
+  border-radius: 0rem 0rem 1rem 1rem;  
 }
 
 .dataResult::-webkit-scrollbar{
@@ -71,5 +81,37 @@ p {
 .dataResult .dataItem:hover {
   background-color: lightgray;
   cursor: pointer;
+}
+
+
+.poke-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.poke-card img {
+  height: 12rem;
+  background-color: black;
+}
+
+.poke-card h3{
+  color: white;
+  border-radius: 1rem 1rem 0rem 0rem;
+  height: 2rem;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background-color: red;
+}
+
+@media (max-width: 1000px){
+  .search-box .logo{
+    background-size: 80%;
+  }
 }
 
